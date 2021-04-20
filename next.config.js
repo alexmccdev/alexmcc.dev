@@ -1,3 +1,5 @@
+const basePath = process.env.NODE_ENV === 'production' ? '/alexmcc.dev' : ''
+
 module.exports = {
     future: {
         webpack5: false,
@@ -21,4 +23,7 @@ module.exports = {
         linkedInLink: 'https://www.linkedin.com/in/alexmccdev',
         emailLink: 'mailto:alexmcc.dev@gmail.com',
     },
+
+    basePath,
+    assetPrefix: `${basePath}/`,
 }
