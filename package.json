@@ -4,7 +4,7 @@
     "private": true,
     "scripts": {
         "dev": "next dev",
-        "build": "next build && next export -o gh-pages",
+        "build": "next build && next export -o gh-pages && echo. >> ./gh-pages/.nojekyll",
         "start": "next start"
     },
     "dependencies": {
