@@ -9,7 +9,7 @@ const AboutSection: React.FC<IAboutSectionProps> = () => {
         <PageWrapper>
             <div className="flex flex-col md:flex-row">
                 <img
-                    className="overflow-hidden rounded-full max-h-52 max-w-52 mr-8 flex-shrink-0 self-center mb-10 md:mb-0"
+                    className="overflow-hidden rounded-full max-h-52 max-w-52 flex-shrink-0 self-center mb-10 md:mr-8 md:mb-0"
                     src="/alex.jpg"
                     alt={process.env.myName}
                     title={process.env.myName}

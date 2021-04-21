@@ -13,7 +13,7 @@ const ProjectSection: React.FC<IProjectSectionProps> = (props) => {
                 {props.projects.map((p: Project) => (
                     <ProjectCard key={p.name} project={p} />
                 ))}
-                <p className="text-xl text-center mb-10">🛠️ More coming soon...</p>
+                <p className="text-xl text-center">🛠️ More coming soon...</p>
             </div>
         </PageWrapper>
     )

@@ -15,7 +15,7 @@ const Header: React.FC<IHeaderProps> = () => {
             <div>
                 <Logo />
             </div>
-            <ul className="block text-right sm:flex text-base md:text-2xl">
+            <ul className="block text-right sm:flex text-base sm:text-2xl">
                 <li className="mr-2 sm:mr-6 my-auto">
                     <span className={`${pathname === '/' && 'underline'} cursor-pointer`}>
                         <Link href="/">Home</Link>
