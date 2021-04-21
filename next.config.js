@@ -1,4 +1,4 @@
-const basePath = process.env.NODE_ENV === 'production' ? '/alexmcc.dev' : ''
+const debug = process.env.NODE_ENV !== 'production'
 
 module.exports = {
     future: {
@@ -24,6 +24,5 @@ module.exports = {
         emailLink: 'mailto:alexmcc.dev@gmail.com',
     },
 
-    basePath,
-    assetPrefix: `${basePath}/`,
+    assetPrefix: !debug ? '/' : '',
 }
