@@ -36,26 +36,13 @@
 @tailwind utilities;
 
 @layer utilities {
-    /* .chunky-underline-lg {
-        box-shadow: 0px -12px 0px var(--color-accentPrimary) inset;
-    }
-
-    .chunky-underline-sm {
-        box-shadow: 0px -7px 0px var(--color-accentPrimary) inset;
-    }
-
-    @variants dark {
-        .chunky-underline-lg {
-            box-shadow: 0px -12px 0px var(--color-accentPrimaryDark) inset;
-        }
-
-        .chunky-underline-sm {
-            box-shadow: 0px -7px 0px var(--color-accentPrimaryDark) inset;
-        }
-    } */
-
     .tilt {
         @apply transform origin-left hover:-rotate-6 transition duration-300;
+    }
+
+    .glow {
+        text-shadow: 0 0 15px;
+        @apply text-yellow-500;
     }
 }
 

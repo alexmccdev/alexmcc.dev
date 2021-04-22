@@ -23,7 +23,12 @@ const ThemeToggle: React.FC<IThemeToggleProps> = () => {
         }
     }
     return (
-        <span role="btn" aria-label="toggle theme" className="cursor-pointer" onClick={toggleTheme}>
+        <span
+            role="btn"
+            aria-label="toggle theme"
+            className={`cursor-pointer ${theme == 'dark' && 'glow'}`}
+            onClick={toggleTheme}
+        >
             {theme == 'light' ? '☀️' : '🌙'}
         </span>
     )

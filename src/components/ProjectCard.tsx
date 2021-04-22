@@ -10,7 +10,7 @@ const ProjectCard: React.FC<IProjectCardProps> = ({ project }) => {
     return (
         <article className="max-w-xl relative flex flex-col w-full p-4 mb-6 border-2 border-current">
             <div className="flex justify-between mb-4">
-                <h2 className="chunky-underline-sm">{project.name}</h2>
+                <h2>{project.name}</h2>
                 <a
                     className="tilt motion-reduce:transform-none cursor-pointer"
                     href={project.link}

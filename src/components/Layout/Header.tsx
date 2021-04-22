@@ -3,7 +3,6 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import Logo from '@components/Icons/Logo'
 import ThemeToggle from '@components/ThemeToggle'
-import { DownloadIcon } from '@components/Icons/OtherIcons'
 
 interface IHeaderProps {}
 
@@ -15,26 +14,28 @@ const Header: React.FC<IHeaderProps> = () => {
             <div>
                 <Logo />
             </div>
-            <ul className="block text-right sm:flex text-base sm:text-2xl">
-                <li className="mr-2 sm:mr-6 my-auto">
-                    <span className={`${pathname === '/' && 'underline'} cursor-pointer`}>
-                        <Link href="/">Home</Link>
-                    </span>
-                </li>
-                <li className="mr-2 sm:mr-6 my-auto">
-                    <span className={`${pathname === '/about' && 'underline'} cursor-pointer`}>
-                        <Link href="/about">About</Link>
-                    </span>
-                </li>
-                <li className="mr-2 sm:mr-6 my-auto">
-                    <span className={`${pathname === '/projects' && 'underline'} cursor-pointer`}>
-                        <Link href="/projects">Projects</Link>
-                    </span>
-                </li>
-                <li className="my-auto mr-2 sm:mr-0">
+            <div className="text-xl sm:text-2xl flex">
+                <ul className="text-right flex">
+                    <li className="mr-2 sm:mr-6 my-auto">
+                        <span className={`${pathname === '/' && 'underline'} cursor-pointer`}>
+                            <Link href="/">Home</Link>
+                        </span>
+                    </li>
+                    <li className="mr-2 sm:mr-6 my-auto">
+                        <span className={`${pathname === '/about' && 'underline'} cursor-pointer`}>
+                            <Link href="/about">About</Link>
+                        </span>
+                    </li>
+                    <li className="mr-2 sm:mr-6 my-auto">
+                        <span className={`${pathname === '/projects' && 'underline'} cursor-pointer`}>
+                            <Link href="/projects">Projects</Link>
+                        </span>
+                    </li>
+                </ul>
+                <div className="my-auto mr-2 sm:mr-0 top-0">
                     <ThemeToggle />
-                </li>
-            </ul>
+                </div>
+            </div>
         </nav>
     )
 }
