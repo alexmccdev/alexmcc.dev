@@ -3,13 +3,10 @@
     :root {
         --color-primary: theme('colors.primary');
         --color-secondary: theme('colors.secondary');
-        --color-accentPrimary: theme('colors.accentPrimary');
-        --color-accentSecondary: theme('colors.accentSecondary');
         --color-primaryDark: theme('colors.primaryDark');
         --color-secondaryDark: theme('colors.secondaryDark');
-        --color-accentPrimaryDark: theme('colors.accentPrimaryDark');
-        --color-accentSecondaryDark: theme('colors.accentSecondaryDark');
     }
+
     html {
         scroll-behavior: smooth;
     }

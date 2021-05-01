@@ -1,9 +1,7 @@
 import React from 'react'
 import PageWrapper from '@components/Layout/PageWrapper'
 
-interface IHeroSectionProps {}
-
-const HeroSection: React.FC<IHeroSectionProps> = () => {
+const HeroSection: React.FC = () => {
     return (
         <PageWrapper>
             <p className="max-w-xl text-2xl sm:text-3xl z-40 tracking-tight">

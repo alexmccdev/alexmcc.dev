@@ -12,12 +12,10 @@ module.exports = {
             colors: {
                 primary: colors.coolGray[900],
                 secondary: colors.coolGray[100],
-                accentPrimary: colors.amber[400],
-                accentSecondary: colors.blue[100],
                 primaryDark: colors.coolGray[100],
                 secondaryDark: colors.coolGray[900],
-                accentPrimaryDark: colors.amber[600],
-                accentSecondaryDark: colors.blue[100],
+                footer: '#e0e3e8',
+                footerDark: '#0e131e',
             },
             maxWidth: (theme) => ({
                 ...theme('spacing'),
@@ -29,12 +27,17 @@ module.exports = {
             minHeight: (theme) => ({
                 ...theme('spacing'),
             }),
+            backgroundImage: (theme) => ({
+                svg: "url('/layered-peaks.svg')",
+                svgDark: "url('/layered-peaks-dark.svg')",
+            }),
         },
     },
     variants: {
         extend: {
             translate: ['motion-reduce', 'responsive'],
             animation: ['responsive', 'motion-safe', 'motion-reduce'],
+            backgroundImage: ['dark'],
         },
     },
     plugins: [],

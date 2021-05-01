@@ -2,9 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import PageWrapper from '@components/Layout/PageWrapper'
 
-interface IAboutSectionProps {}
-
-const AboutSection: React.FC<IAboutSectionProps> = () => {
+const AboutSection: React.FC = () => {
     return (
         <PageWrapper>
             <div className="flex flex-col md:flex-row">

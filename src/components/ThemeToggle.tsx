@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react'
 
-interface IThemeToggleProps {}
-
-const ThemeToggle: React.FC<IThemeToggleProps> = () => {
+const ThemeToggle: React.FC = () => {
     const [activeTheme, setActiveTheme] = useState('light')
     const inactiveTheme = activeTheme === 'light' ? 'dark' : 'light'
 

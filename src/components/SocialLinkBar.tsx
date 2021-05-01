@@ -1,8 +1,6 @@
 import SocialIcons from '@components/Icons/SocialIcons'
 
-interface ISocialLinkBarProps {}
-
-const SocialLinkBar: React.FC<ISocialLinkBarProps> = () => {
+const SocialLinkBar: React.FC = () => {
     return (
         <nav>
             <ul className="flex">

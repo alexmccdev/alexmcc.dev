@@ -26,7 +26,7 @@ const projects: Project[] = [
     },
 ]
 
-const Projects = () => {
+const Projects: React.FC = () => {
     return (
         <>
             <Head>

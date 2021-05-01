@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import HeroSection from '@components/Sections/HeroSection'
 
-const Home = () => {
+const Home: React.FC = () => {
     return (
         <>
             <Head>

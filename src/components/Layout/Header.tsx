@@ -4,13 +4,11 @@ import dynamic from 'next/dynamic'
 import { useRouter } from 'next/router'
 import Logo from '@components/Icons/Logo'
 
-interface IHeaderProps {}
-
 const ThemeToggle = dynamic(() => import('@components/ThemeToggle'), {
     ssr: false,
 })
 
-const Header: React.FC<IHeaderProps> = () => {
+const Header: React.FC = () => {
     const { pathname } = useRouter()
 
     return (
