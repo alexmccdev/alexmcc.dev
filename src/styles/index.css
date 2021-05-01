@@ -18,6 +18,12 @@
         @apply hidden;
     }
 
+    html,
+    body,
+    body div#__next {
+        @apply h-full flex flex-col;
+    }
+
     h1 {
         @apply font-bold text-3xl;
     }
@@ -44,10 +50,4 @@
         text-shadow: 0 0 15px;
         @apply text-yellow-500;
     }
-}
-
-html,
-body,
-#__next {
-    @apply h-full flex flex-col;
 }

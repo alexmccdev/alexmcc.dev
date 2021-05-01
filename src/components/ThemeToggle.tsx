@@ -1,35 +1,29 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 interface IThemeToggleProps {}
 
 const ThemeToggle: React.FC<IThemeToggleProps> = () => {
-    const [theme, setTheme] = useState(
-        typeof window !== 'undefined' && localStorage.getItem('theme') == 'light' ? 'light' : 'dark'
-    )
+    const [activeTheme, setActiveTheme] = useState('light')
+    const inactiveTheme = activeTheme === 'light' ? 'dark' : 'light'
 
-    const toggleTheme = () => {
-        const html = document.querySelector('html')
+    useEffect(() => {
+        const savedTheme = window.localStorage.getItem('theme')
+        savedTheme && setActiveTheme(savedTheme)
+    }, [])
 
-        if (!!localStorage.theme && localStorage.getItem('theme') == 'dark') {
-            html.classList.remove('dark')
-            html.classList.add('light')
-            localStorage.setItem('theme', 'light')
-            setTheme('light')
-        } else {
-            html.classList.remove('light')
-            html.classList.add('dark')
-            localStorage.setItem('theme', 'dark')
-            setTheme('dark')
-        }
-    }
+    useEffect(() => {
+        document.querySelector('html').className = activeTheme
+        window.localStorage.setItem('theme', activeTheme)
+    }, [activeTheme])
+
     return (
         <span
             role="btn"
             aria-label="toggle theme"
-            className={`cursor-pointer ${theme == 'dark' && 'glow'}`}
-            onClick={toggleTheme}
+            className={`cursor-pointer ${activeTheme == 'dark' && 'glow'}`}
+            onClick={() => setActiveTheme(inactiveTheme)}
         >
-            {theme == 'light' ? '☀️' : '🌙'}
+            {activeTheme == 'dark' ? '🌙' : '☀️'}
         </span>
     )
 }
