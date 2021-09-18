@@ -21,8 +21,8 @@ const projects: Project[] = [
         name: `Birthly`,
         link: 'https://github.com/alexmccdev/birthly',
         description:
-            'Single-page React application that allows you to search for your favorite quotes from The Office (US) TV series. Copy your favorite quotes to share or dive deeper to view what was said before and after a specific quote.',
-        technologies: ['Node.js', 'React', 'TypeScript', 'TailwindCSS'],
+            'Next.js web application and React Native mobile application that allows birth workers (OB/GYNs, midwives, doulas, etc.) keep a digital birth log and view their birth data in interesting ways.',
+        technologies: ['Node.js', 'Next.js', 'React', 'TypeScript', 'TailwindCSS'],
     },
     {
         name: 'alexmcc.dev',
