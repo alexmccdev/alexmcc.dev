@@ -13,7 +13,7 @@ const AboutSection: React.FC = () => {
                     title={process.env.myName}
                 />
                 <p className="max-w-xl text-xl z-50 tracking-tight">
-                    Currently, I am a software consultant working on an education grants management platform at{' '}
+                    Currently, I am a software engineer working on improving loan applicant verifications at{' '}
                     <a
                         className="underline cursor-pointer"
                         href={process.env.employerLink}
@@ -28,7 +28,7 @@ const AboutSection: React.FC = () => {
                     <span role="img" aria-label="sparkle">
                         ✨
                     </span>
-                    web development
+                    software development
                     <span role="img" aria-label="sparkle">
                         ✨
                     </span>
