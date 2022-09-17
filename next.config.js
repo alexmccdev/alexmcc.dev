@@ -11,10 +11,10 @@ module.exports = {
 
         myName: 'Alex McConnell',
         myInitials: 'AM',
-        myJobTitle: 'Full-Stack Web Developer',
+        myJobTitle: 'Software Engineer',
 
-        employerName: 'Harris, Mackessy & Brennan, Inc.',
-        employerLink: 'https://hmbnet.com/egrants/',
+        employerName: 'Upstart',
+        employerLink: 'https://www.upstart.com/',
 
         myLocation: 'West Hartford, CT',
         locationLink: 'https://goo.gl/maps/7fhjEr5uVaAn1xuC7',
