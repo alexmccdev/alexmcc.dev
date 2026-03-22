@@ -1,0 +1,20 @@
+# Alex McConnell
+
+> Full stack software engineer based in Hartford, CT.
+
+Alex McConnell is a full stack engineer building the borrower verification platform behind AI-driven credit decisioning at Upstart. He works across the stack on the systems that verify borrower identity, income, and employment — the data layer that makes responsible lending possible.
+
+Outside of engineering he is a dad and rock climber.
+
+## Work
+
+- **Company:** Upstart (https://www.upstart.com)
+- **Role:** Full Stack Engineer
+- **Focus:** Borrower verification platform — the infrastructure behind AI-driven credit decisioning
+
+## Contact
+
+- Email: alexmcc.dev@gmail.com
+- GitHub: https://github.com/alexmccdev
+- LinkedIn: https://www.linkedin.com/in/alexmccdev
+- Website: https://alexmcc.dev
