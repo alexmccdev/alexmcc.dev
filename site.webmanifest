@@ -1,10 +1,7 @@
 {
     "name": "alexmcc.dev",
     "short_name": "alexmcc.dev",
-    "icons": [
-        { "src": "/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
-        { "src": "/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" }
-    ],
+    "icons": [{ "src": "/favicon.svg", "type": "image/svg+xml", "sizes": "any" }],
     "theme_color": "#faf9f7",
     "background_color": "#faf9f7",
     "display": "standalone"
